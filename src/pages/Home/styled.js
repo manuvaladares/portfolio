@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
-  font-family: "Roboto", sans-serif;
 `;
 
 export const ProfileImage = styled.img`
