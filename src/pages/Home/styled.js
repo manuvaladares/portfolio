@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  margin: 0 8rem;
 `;
 
 export const ProfileImage = styled.img`
@@ -13,20 +13,50 @@ export const ProfileImage = styled.img`
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 3px solid white; 
 `;
 
-export const Nome = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+
+
+export const Titulo = styled.div`
+  margin-left: 20px;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #B3B3B3;
+  }
+  `;
+
+export const Topo = styled.div`
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
 `;
+
+export const Texto = styled.p`
+  font-weight: 200;
+  font-size: 1.5rem;
+  width: 90%;
+`;
+
 
 export const Section = styled.div`
   margin-top: 20px;
+  p{
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 16px;
-  color: #d3d3d3;
+  font-size: 2rem;
+  font-weight: 500;
 `;
 
 export const List = styled.ul`
@@ -35,8 +65,9 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  font-size: 14px;
+  font-size: 1.5rem;
   margin-top: 5px;
+  font-weight: 200;
 `;
 
 export const Sidebar = styled.div`

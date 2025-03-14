@@ -1,37 +1,31 @@
 import React from "react";
-import { Container, ProfileImage, Nome, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, ContactButton } from "./styled";
+import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, ContactButton, Titulo, Topo, Texto } from "./styled";
 import foto from "../../assets/foto.jpg";
 
 const Home = () => {
   return (
     <Container>
       <div>
-        <ProfileImage src={foto} alt="Profile" />
-        <Nome>Hi, I’m Manuella! 👋</Nome>
-        <p>Software Developer | Python | React</p>
-        <p>
+        <Topo>
+          <ProfileImage src={foto} alt="Profile" />
+          <Titulo>
+            <h1>Hi, I’m Manuella! 👋</h1>
+            <p>Software Developer | Python | React</p>
+          </Titulo>
+        </Topo>
+        <Texto>
           Pursuing a B.Sc. in Software Engineering at the University of Brasília
           (UnB), researcher in Digital Accessibility and one year of experience
           in software development.
-        </p>
+        </Texto>
         <Section>
           <SectionTitle>Programming Languages</SectionTitle>
-          <List>
-            <ListItem>Python</ListItem>
-            <ListItem>C</ListItem>
-          </List>
+          <p>Python, C</p>
         </Section>
 
         <Section>
           <SectionTitle>Web development</SectionTitle>
-          <List>
-            <ListItem>HTML5</ListItem>
-            <ListItem>CSS3</ListItem>
-            <ListItem>JavaScript</ListItem>
-            <ListItem>React</ListItem>
-            <ListItem>Git</ListItem>
-            <ListItem>Scrum</ListItem>
-          </List>
+          <p>HTML5, CSS 3, JavaScript, React, Git, Scrum</p>
         </Section>
       </div>
       <Sidebar>
