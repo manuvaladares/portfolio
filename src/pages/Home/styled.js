@@ -6,10 +6,19 @@ import '@fontsource/poppins/700.css';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 8rem 2rem 8rem;
+  justify-content: flex-start;
+  margin: 5rem 8rem 2rem 8rem;
   font-size: 20px;
+
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    margin: 3rem ;
+  }
+
+  @media (max-width: 768px) {
+    margin: 2rem ;
+    font-size: 18px;
+  }
 `;
 
 export const ProfileImage = styled.img`
@@ -17,46 +26,92 @@ export const ProfileImage = styled.img`
   height: 220px;
   border-radius: 50%;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
+
+  @media (max-width: 480px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
-
-
 
 export const Titulo = styled.div`
   margin-left: 40px;
   text-align: left;
+
   h1 {
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
   }
+
   p {
-    color:rgb(98, 106, 107);
+    color: rgb(98, 106, 107);
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
-  `;
+`;
 
 export const Topo = styled.div`
   display: flex;
   justify-content: left;
-  
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+    margin: 3rem 2rem;
+    align-items: center;
+  }
 `;
 
 export const Texto = styled.p`
   font-weight: 400;
   width: 90%;
-`;
 
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export const Section = styled.div`
   margin-top: 20px;
-  p{
+
+  p {
     font-weight: 200;
+
+    @media (max-width: 768px) {
+    }
   }
 `;
 
 export const SectionTitle = styled.h3`
   font-size: 22px;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const List = styled.ul`
@@ -81,6 +136,10 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   width: 400px;
+
+  @media (max-width: 1020px) {
+    width: 100%;
+  }
 `;
 
 export const SidebarSection = styled.div`
@@ -90,9 +149,24 @@ export const SidebarSection = styled.div`
 export const Redes = styled.div`
   display: flex;
   align-items: center;
-  display: flex;
   justify-content: center;
   margin: 50px 0 0 0;
+
+  a {
+    margin: 0 10px;
+
+    img {
+      width: 40px;
+
+      @media (max-width: 768px) {
+        width: 30px;
+      }
+
+      @media (max-width: 480px) {
+        width: 25px;
+      }
+    }
+  }
 `;
 
 export const ContactButton = styled.button`
@@ -106,5 +180,15 @@ export const ContactButton = styled.button`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 `;

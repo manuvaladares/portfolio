@@ -75,7 +75,8 @@ const Home = () => {
           </Redes>
         </SidebarSection>
         
-        <ContactButton>CONTACT ME</ContactButton>
+        <ContactButton onClick={() => window.location.href = "mailto:manuella.valadares@hotmail.com"}>CONTACT ME</ContactButton>
+
       </Sidebar>
     </Container>
   );
