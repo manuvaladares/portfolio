@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, ContactButton, Titulo, Topo, Texto } from "./styled";
-import foto from "../../assets/foto.jpg";
+import foto from "../../assets/foto.jpeg";
+import hand from "../../assets/hand.png";
+import school from "../../assets/school.png";
 
 const Home = () => {
   return (
@@ -9,7 +11,7 @@ const Home = () => {
         <Topo>
           <ProfileImage src={foto} alt="Profile" />
           <Titulo>
-            <h1>Hi, I’m Manuella! 👋</h1>
+            <h1>Hi, I’m Manuella! <img src={hand} alt="hand" style={{ width: "32px", marginRight: "8px" }} /></h1>
             <p>Software Developer | Python | React</p>
           </Titulo>
         </Topo>
@@ -47,7 +49,7 @@ const Home = () => {
         <SidebarSection>
           <SectionTitle>Research publications</SectionTitle>
           <List>
-            <ListItem>A Quantitative Study of Publications about Underrepresented Minority ...</ListItem>
+            <ListItem> A Quantitative Study of Publications about Underrepresented Minority ...</ListItem>
           </List>
         </SidebarSection>
         

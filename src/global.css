@@ -1,48 +1,7 @@
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Light.ttf') format('truetype');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   display: flex;
@@ -50,6 +9,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #2C2C2C;
-  color: #FFFFFF;
+  background-color: #f5f5f7;
+  color: #2C2C2C;
 }

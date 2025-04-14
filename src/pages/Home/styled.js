@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/700.css';
+
 
 export const Container = styled.div`
   display: flex;
@@ -9,25 +13,25 @@ export const Container = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 3px solid white; 
 `;
 
 
 
 export const Titulo = styled.div`
-  margin-left: 20px;
+  margin-left: 40px;
+  text-align: left;
   h1 {
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 3rem;
     margin-bottom: 10px;
-    font-weight: 600;
   }
   p {
     font-size: 1.5rem;
-    color: #B3B3B3;
+    color:rgb(98, 106, 107);
   }
   `;
 
@@ -36,12 +40,13 @@ export const Topo = styled.div`
   display: flex;
   align-items: center;
   justify-content: left;
+  
 
 `;
 
 export const Texto = styled.p`
-  font-weight: 200;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.3rem;
   width: 90%;
 `;
 
@@ -55,8 +60,8 @@ export const Section = styled.div`
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
 `;
 
 export const List = styled.ul`
@@ -74,6 +79,7 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 350px;
 `;
 
 export const SidebarSection = styled.div`
@@ -82,7 +88,7 @@ export const SidebarSection = styled.div`
 
 
 export const ContactButton = styled.button`
-  background: linear-gradient(90deg, #6a5acd, #8a2be2);
+  background: #2C2C2C;
   color: white;
   padding: 10px 20px;
   border: none;
