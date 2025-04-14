@@ -8,8 +8,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 8rem;
+  margin: 2rem 8rem 2rem 8rem;
+  font-size: 20px;
 `;
 
 export const ProfileImage = styled.img`
@@ -26,19 +26,16 @@ export const Titulo = styled.div`
   text-align: left;
   h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 10px;
   }
   p {
-    font-size: 1.5rem;
     color:rgb(98, 106, 107);
   }
   `;
 
 export const Topo = styled.div`
-  text-align: center;
   display: flex;
-  align-items: center;
   justify-content: left;
   
 
@@ -46,7 +43,6 @@ export const Topo = styled.div`
 
 export const Texto = styled.p`
   font-weight: 400;
-  font-size: 1.3rem;
   width: 90%;
 `;
 
@@ -54,13 +50,12 @@ export const Texto = styled.p`
 export const Section = styled.div`
   margin-top: 20px;
   p{
-    font-size: 1.5rem;
     font-weight: 200;
   }
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 700;
 `;
 
@@ -70,22 +65,35 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 5px;
   font-weight: 200;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 350px;
+  width: 400px;
 `;
 
 export const SidebarSection = styled.div`
   margin-bottom: 20px;
 `;
 
+export const Redes = styled.div`
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+`;
 
 export const ContactButton = styled.button`
   background: #2C2C2C;
@@ -94,7 +102,6 @@ export const ContactButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
   transition: 0.3s;
 
   &:hover {

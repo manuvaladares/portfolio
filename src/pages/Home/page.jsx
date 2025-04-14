@@ -1,8 +1,11 @@
 import React from "react";
-import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, ContactButton, Titulo, Topo, Texto } from "./styled";
+import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, Redes, ContactButton, Titulo, Topo, Texto } from "./styled";
 import foto from "../../assets/foto.jpeg";
 import hand from "../../assets/hand.png";
 import school from "../../assets/school.png";
+import lattes from "../../assets/lattes.png";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github.png";
 
 const Home = () => {
   return (
@@ -11,7 +14,7 @@ const Home = () => {
         <Topo>
           <ProfileImage src={foto} alt="Profile" />
           <Titulo>
-            <h1>Hi, I’m Manuella! <img src={hand} alt="hand" style={{ width: "32px", marginRight: "8px" }} /></h1>
+            <h1>Hi, I’m Manuella! <img src={hand} alt="hand" style={{ width: "40px", marginRight: "8px" }} /></h1>
             <p>Software Developer | Python | React</p>
           </Titulo>
         </Topo>
@@ -27,7 +30,7 @@ const Home = () => {
 
         <Section>
           <SectionTitle>Web development</SectionTitle>
-          <p>HTML5, CSS 3, JavaScript, React, Git, Scrum</p>
+          <p>HTML5, CSS3, JavaScript, React, Git</p>
         </Section>
       </div>
       <Sidebar>
@@ -49,8 +52,27 @@ const Home = () => {
         <SidebarSection>
           <SectionTitle>Research publications</SectionTitle>
           <List>
-            <ListItem> A Quantitative Study of Publications about Underrepresented Minority ...</ListItem>
+            <ListItem>
+              <a 
+                href="https://ieeexplore.ieee.org/document/10893151/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                A Quantitative Study of Publications about Underrepresented Minority ...
+              </a>
+            </ListItem>
           </List>
+          <Redes>
+            <a href="https://www.linkedin.com/in/manuella-valadares" target="_blank" rel="noopener noreferrer">
+              <img src={linkedin} alt="LinkedIn" style={{ width: "50px", marginRight: "10px" }} />
+            </a>
+            <a href="https://github.com/manuvaladares" target="_blank" rel="noopener noreferrer">
+              <img src={github} alt="GitHub" style={{ width: "50px", marginRight: "10px" }} />
+            </a>
+            <a href="https://lattes.cnpq.br/9815810102046557" target="_blank" rel="noopener noreferrer">
+              <img src={lattes} alt="Lattes" style={{ width: "50px" }} />
+            </a>
+          </Redes>
         </SidebarSection>
         
         <ContactButton>CONTACT ME</ContactButton>
