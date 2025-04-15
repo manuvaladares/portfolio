@@ -1,14 +1,31 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import '@fontsource/poppins/300.css';
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/700.css';
 
+// Defina a animação de chacoalhar
+const shakeAnimation = keyframes`
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+`;
+
+// Estilize a imagem da mão com a animação no hover
+export const HandImage = styled.img`
+  width: 40px;
+  margin-right: 8px;
+
+  &:hover {
+    animation: ${shakeAnimation} 0.5s ease-in-out; /* Aplica a animação ao passar o mouse */
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
-  margin: 6rem 4rem 2.5rem 8rem;
+  margin: 2.5rem 4rem 2.5rem 8rem;
   font-size: 20px;
-  padding-right: 300px;
 
   @media (max-width: 1020px) {
     flex-direction: column;
@@ -136,25 +153,12 @@ export const ListItem = styled.li`
 `;
 
 export const Sidebar = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 300px;
-  padding: 20px;
-  overflow-y: auto;
-  background-color: #f9f9f9; 
-  z-index: 999;
-
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
+  width: 500px;
 
   @media (max-width: 1020px) {
-    position: relative;
     width: 100%;
-    box-shadow: none;
-    justify-content: flex-start; 
   }
 `;
 
@@ -183,7 +187,6 @@ export const Redes = styled.div`
 
 export const Projetos = styled.section`
   margin: 6rem 4rem 2.5rem 8rem;
-  padding-right: 400px;
 `;
 
 export const ProjectsGrid = styled.div`
@@ -191,7 +194,7 @@ export const ProjectsGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
 `;
 
 export const ProjectCard = styled.div`
@@ -212,8 +215,8 @@ export const ProjectCard = styled.div`
   }
 
   a {
-    color: #4a00e0;
-    text-decoration: none;
+    color: #2C2C2C;
+    text-decoration: underline;
     font-weight: bold;
 
     &:hover {

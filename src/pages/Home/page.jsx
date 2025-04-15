@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ProfileImage, Projetos, ProjectsGrid, ProjectCard, Section, SectionTitle, List, ListItem, Sidebar, Redes, ContactButton, Titulo, Topo, Texto } from "./styled";
+import { Container, HandImage, ProfileImage, Projetos, ProjectsGrid, ProjectCard, Section, SectionTitle, List, ListItem, Sidebar, Redes, ContactButton, Titulo, Topo, Texto } from "./styled";
 import foto from "../../assets/foto.jpeg";
 import hand from "../../assets/hand.png";
 import school from "../../assets/school.png";
@@ -15,7 +15,7 @@ const Home = () => {
         <Topo>
           <ProfileImage src={foto} alt="Profile" />
           <Titulo>
-            <h1>Hi, I’m Manuella! <img src={hand} alt="hand" style={{ width: "40px", marginRight: "8px" }} /></h1>
+            <h1>Hi, I’m Manuella! <HandImage src={hand} alt="hand" /></h1>
             <p>Software Developer | Python | React</p>
           </Titulo>
         </Topo>
