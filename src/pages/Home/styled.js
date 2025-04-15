@@ -6,8 +6,7 @@ import '@fontsource/poppins/700.css';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: flex-start;
-  margin: 5rem 8rem 2rem 8rem;
+  margin: 2.5rem 8rem 1.5rem 8rem;
   font-size: 20px;
 
   @media (max-width: 1020px) {
@@ -84,6 +83,8 @@ export const Topo = styled.div`
 export const Texto = styled.p`
   font-weight: 400;
   width: 90%;
+  text-align: justify;
+
 
   @media (max-width: 1200px) {
     justify-content: center;
@@ -95,7 +96,6 @@ export const Texto = styled.p`
 `;
 
 export const Section = styled.div`
-  margin-top: 20px;
 
   p {
     font-weight: 200;
@@ -108,6 +108,8 @@ export const Section = styled.div`
 export const SectionTitle = styled.h3`
   font-size: 22px;
   font-weight: 700;
+  margin-top: 20px;
+  padding: 0;
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -117,6 +119,7 @@ export const SectionTitle = styled.h3`
 export const List = styled.ul`
   list-style: none;
   padding: 0;
+  margin: 0;
 `;
 
 export const ListItem = styled.li`
@@ -125,9 +128,6 @@ export const ListItem = styled.li`
   font-weight: 200;
   a {
     color: inherit;
-    text-decoration: none;
-  }
-  a:hover {
     text-decoration: underline;
   }
 `;
@@ -142,15 +142,13 @@ export const Sidebar = styled.div`
   }
 `;
 
-export const SidebarSection = styled.div`
-  margin-bottom: 20px;
-`;
+
 
 export const Redes = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 0 0;
+  margin: 50px 0 20px 0;
 
   a {
     margin: 0 10px;

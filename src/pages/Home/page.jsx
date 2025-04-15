@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, SidebarSection, Redes, ContactButton, Titulo, Topo, Texto } from "./styled";
+import { Container, ProfileImage, Section, SectionTitle, List, ListItem, Sidebar, Redes, ContactButton, Titulo, Topo, Texto } from "./styled";
 import foto from "../../assets/foto.jpeg";
 import hand from "../../assets/hand.png";
 import school from "../../assets/school.png";
@@ -34,22 +34,22 @@ const Home = () => {
         </Section>
       </div>
       <Sidebar>
-        <SidebarSection>
+
           <SectionTitle>Languages</SectionTitle>
           <List>
             <ListItem>🇺🇸 EN Intermediate</ListItem>
             <ListItem>🇧🇷 PT-BR Native Speaker</ListItem>
           </List>
-        </SidebarSection>
 
-        <SidebarSection>
+
+
           <SectionTitle>Education</SectionTitle>
           <List>
             <ListItem>Software Engineering Bachelors Degree - Universidade de Brasília</ListItem>
           </List>
-        </SidebarSection>
 
-        <SidebarSection>
+
+
           <SectionTitle>Research publications</SectionTitle>
           <List>
             <ListItem>
@@ -73,7 +73,6 @@ const Home = () => {
               <img src={lattes} alt="Lattes" style={{ width: "50px" }} />
             </a>
           </Redes>
-        </SidebarSection>
         
         <ContactButton onClick={() => window.location.href = "mailto:manuella.valadares@hotmail.com"}>CONTACT ME</ContactButton>
 
