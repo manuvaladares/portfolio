@@ -6,17 +6,20 @@ import '@fontsource/poppins/700.css';
 
 export const Container = styled.div`
   display: flex;
-  margin: 2.5rem 8rem 1.5rem 8rem;
+  margin: 6rem 4rem 2.5rem 8rem;
   font-size: 20px;
+  padding-right: 300px;
 
   @media (max-width: 1020px) {
     flex-direction: column;
     margin: 3rem ;
+    padding-right: 0;
   }
 
   @media (max-width: 768px) {
     margin: 2rem ;
     font-size: 18px;
+    padding-right: 0;
   }
 `;
 
@@ -133,16 +136,27 @@ export const ListItem = styled.li`
 `;
 
 export const Sidebar = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9; 
+  z-index: 999;
+
   display: flex;
   flex-direction: column;
-  width: 400px;
+  justify-content: center; /* Centraliza verticalmente */
 
   @media (max-width: 1020px) {
+    position: relative;
     width: 100%;
+    box-shadow: none;
+    justify-content: flex-start; 
   }
 `;
-
-
 
 export const Redes = styled.div`
   display: flex;
@@ -167,6 +181,48 @@ export const Redes = styled.div`
   }
 `;
 
+export const Projetos = styled.section`
+  margin: 6rem 4rem 2.5rem 8rem;
+  padding-right: 400px;
+`;
+
+export const ProjectsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+`;
+
+export const ProjectCard = styled.div`
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: #4a00e0;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+
 export const ContactButton = styled.button`
   background: #2C2C2C;
   color: white;
@@ -175,6 +231,7 @@ export const ContactButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bootom: 50px;
 
   &:hover {
     opacity: 0.8;
