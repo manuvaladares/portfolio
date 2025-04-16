@@ -1,10 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './global.css'
-import Home from "./pages/Home/page"
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './global.css';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Home />
-  </StrictMode>,
-)
+  <React.StrictMode>
+    <BrowserRouter basename="/personal-portifolio">
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
