@@ -4,6 +4,17 @@ export const Projetos = styled.section`
   margin: 6rem 4rem 2.5rem 8rem;
 `;
 
+export const SectionTitle = styled.h3`
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`;
+
 export const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

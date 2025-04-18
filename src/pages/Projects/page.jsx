@@ -1,5 +1,5 @@
 import React from "react";
-import {Projetos, ProjectsGrid, ProjectCard} from "./styled";
+import {Projetos, ProjectsGrid, ProjectCard, SectionTitle} from "./styled";
 
 
 const Projects = () => {
