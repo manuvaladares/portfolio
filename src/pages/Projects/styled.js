@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Projetos = styled.section`
-  margin: 6rem 4rem 2.5rem 8rem;
+  margin: 0 4rem 2.5rem 4rem;
 
   @media (max-width: 1024px) {
     margin: 4rem 2rem;
@@ -16,11 +16,26 @@ export const Projetos = styled.section`
   }
 `;
 
+export const TagContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+`;
+
+export const Tag = styled.span`
+  background-color: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+`;
+
 export const SectionTitle = styled.h3`
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
-  margin-top: 20px;
   padding: 0;
+  margin: 20px;
 
   @media (max-width: 768px) {
     font-size: 18px;
