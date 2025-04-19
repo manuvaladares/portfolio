@@ -16,7 +16,7 @@ const Projects = () => {
             <Tag>styled-components</Tag>
           </TagContainer>
           <a
-            href="https://github.com/manuvaladares/portfolio"
+            href="https://github.com/manuvaladares/personal-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,15 +25,15 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <h3>PDF Reader (Accessible)</h3>
-          <p>React + PDF.js reader with screen reader support</p>
+          <h3>Stardew Valley terminal game with SQL</h3>
+          <p>Terminal game with SQL</p>
           <TagContainer>
-            <Tag>React</Tag>
-            <Tag>PDF.js</Tag>
-            <Tag>Acessibilidade</Tag>
+            <Tag>PostgreSQL</Tag>
+            <Tag>Python</Tag>
+            <Tag>MUD</Tag>
           </TagContainer>
           <a
-            href="https://github.com/manuvaladares/pdf-reader"
+            href="https://github.com/SBD1/2024.2-StardewValley"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,14 +42,15 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <h3>Accessibility Checker</h3>
-          <p>Tool to validate HTML against WCAG rules</p>
+          <h3>Minas de cultura</h3>
+          <p>Check cultural expenses of the state of Minas Gerais</p>
           <TagContainer>
-            <Tag>JavaScript</Tag>
-            <Tag>WCAG</Tag>
+            <Tag>Python</Tag>
+            <Tag>Web Scraping</Tag>
+            <Tag>Next</Tag>
           </TagContainer>
           <a
-            href="https://github.com/manuvaladares/accessibility-checker"
+            href="https://github.com/manuvaladares/2024-1-MinasDeCultura"
             target="_blank"
             rel="noopener noreferrer"
           >
