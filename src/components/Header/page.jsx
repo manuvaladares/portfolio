@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <HeaderWrapper>
-      <h1>Manuella Valadares</h1>
       <nav>
-        <Link
-          to="/Projects"
-          style={{ marginLeft: "20px", textDecoration: "none", color: "inherit" }}
-        >
-          Projects
+        <Link to="/" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
+          Home
+        </Link>
+        <Link to="/projects" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
+          Projetos
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
+          Sobre mim
         </Link>
       </nav>
     </HeaderWrapper>
@@ -19,4 +21,3 @@ const Header = () => {
 };
 
 export default Header;
-
