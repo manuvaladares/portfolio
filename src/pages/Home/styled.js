@@ -20,7 +20,7 @@ export const Section = styled.section`
   }
 
   p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     margin: 0;
   }

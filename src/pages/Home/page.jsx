@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import {
   Section,
   ContentWrapper,
@@ -11,7 +12,20 @@ const Home = () => {
       <Section>
         <ContentWrapper>
           <h2>Hello, I'm <ScriptFont>Manuella</ScriptFont>.</h2>
-          <p>I'm a Software Engeneer from Brasil.</p>
+          <p>
+            I'm a{' '}
+            <span aria-hidden="true">
+              <Typewriter
+                words={['software engineer.', 'researcher.', 'web developer.']}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={70}
+                delaySpeed={2000}
+              />
+            </span>
+          </p>
         </ContentWrapper>
       </Section>
 
