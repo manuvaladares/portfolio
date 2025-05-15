@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -12,6 +14,9 @@ body {
   background-color: #f5f5f7;
   color: #2C2C2C;
   background-image: 
-    repeating-linear-gradient(0deg, #ddd 0px, #ddd 0.8px, transparent 0.8px, transparent 50px),
-    repeating-linear-gradient(90deg, #ddd 0px, #ddd 0.8px, transparent 0.8px, transparent 50px);
+    repeating-linear-gradient(0deg, #ddd 0px, #ddd 0.8px, transparent 0.8px, transparent 200px),
+    repeating-linear-gradient(90deg, #ddd 0px, #ddd 0.8px, transparent 0.8px, transparent 350px);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
