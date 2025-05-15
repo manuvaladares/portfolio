@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Section>
         <ContentWrapper>
-          <h1>Hello, I'm <ScriptFont>Manuella</ScriptFont>.</h1>
+          <h2>Hello, I'm <ScriptFont>Manuella</ScriptFont>.</h2>
           <p>I'm a Software Engeneer from Brasil.</p>
         </ContentWrapper>
       </Section>
