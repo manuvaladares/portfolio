@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const ScriptFont = styled.span`
-  font-family: "Ballet",cursive;
-  font-size: 6rem;
-  font-weight: 600;
-`;
 
 export const SectionHello = styled.section`
   height: 100vh;
@@ -13,16 +8,20 @@ export const SectionHello = styled.section`
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
-  h2{
-    font-size: 4rem;
+  h1{
+    font-size: 5.5rem;
     font-weight: 400;
-    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: 'EB Garamond', sans-serif;
   }
 
   p{
     font-size: 1.5rem;
     font-weight: 300;
-    margin: 0;
+    margin-top: 0;
+
+
   }
   @media (max-width: 768px) {
     h2{

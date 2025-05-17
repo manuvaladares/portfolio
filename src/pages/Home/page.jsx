@@ -4,8 +4,7 @@ import Projects from '../../components/Projects/page.jsx';
 import About from '../../components/About/page.jsx';
 import {
   SectionHello,
-  ContentWrapper,
-  ScriptFont
+  ContentWrapper
 } from './styled';
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
     <>
       <SectionHello>
         <ContentWrapper>
-          <h2>Hello, I'm <ScriptFont>Manuella</ScriptFont>.</h2>
+          <h1>Hello, I'm Manuella.</h1>
           <p>
             I'm a{' '}
             <span aria-hidden="true">

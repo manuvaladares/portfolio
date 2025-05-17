@@ -14,8 +14,10 @@ export const AboutText = styled.div`
   z-index: 2;
   
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: 'EB Garamond', sans-serif;
   }
 
   p {
