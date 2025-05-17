@@ -9,7 +9,7 @@ export const SectionHello = styled.section`
   justify-content: center;
   scroll-snap-align: start;
   h1{
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
     margin-top: 0;

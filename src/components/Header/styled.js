@@ -8,10 +8,10 @@ export const HeaderWrapper = styled.header`
 
   color: #2C2C2C;
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* melhor que 'right' */
+  justify-content: flex-end;
   z-index: 1000;
   padding: 0 40px;
 `;

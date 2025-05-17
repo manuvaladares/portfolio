@@ -10,18 +10,17 @@ export const SectionAbout = styled.section`
 `;
 
 export const AboutText = styled.div`
-  max-width: 850px;
+  max-width: 800px;
   z-index: 2;
   
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 400;
     font-family: 'EB Garamond', sans-serif;
   }
 
   p {
-    font-size: 1.125rem;
     text-align: justify;
     margin-bottom: 1rem;
   }
@@ -30,7 +29,7 @@ export const AboutText = styled.div`
 export const PhotoLeft = styled.img`
   position: absolute;
   top: -40px;
-  left: -500px;
+  left: -400px;
   width: 400px;
   transform: rotate(-12deg);
   border: 1px solid #ddd;
@@ -47,7 +46,7 @@ export const PhotoLeft = styled.img`
 export const PhotoRight = styled.img`
   position: absolute;
   bottom: -40px;
-  right: -500px;
+  right: -400px;
   width: 400px;
   transform: rotate(10deg);
   border: 1px solid #ddd;
