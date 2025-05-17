@@ -7,8 +7,7 @@ export const ScriptFont = styled.span`
 `;
 
 export const SectionHello = styled.section`
-  height: 67vh;
-  margin-top: 5rem;
+  height: 100vh;
   min-height: 400px;
   display: flex;
   align-items: center;

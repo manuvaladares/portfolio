@@ -1,9 +1,9 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Projects from '../../components/Projects/page.jsx';
+import About from '../../components/About/page.jsx';
 import {
   SectionHello,
-  SectionAbout, AboutContainer, AboutPhoto, AboutText,
   ContentWrapper,
   ScriptFont
 } from './styled';
@@ -30,23 +30,7 @@ const Home = () => {
           </p>
         </ContentWrapper>
       </SectionHello>
-
-      <SectionAbout>
-        <ContentWrapper>
-          <AboutContainer>
-            <AboutPhoto>
-              <img src="/caminho/para/foto.jpg" alt="Foto de perfil" />
-            </AboutPhoto>
-            <AboutText>
-              <h2>My About</h2>
-              <p>
-                Sou desenvolvedora de software, apaixonada por acessibilidade,
-                design e crochê. Atualmente estudo Engenharia de Software na UnB.
-              </p>
-            </AboutText>
-          </AboutContainer>
-        </ContentWrapper>
-      </SectionAbout>
+      <About />
       <Projects />
     </>
   );
