@@ -66,10 +66,10 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
 
   color: #2C2C2C;
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* melhor que 'right' */
+  justify-content: flex-end;
   z-index: 1000;
   padding: 0 40px;
 `,Fg=()=>V.jsx(Wg,{children:V.jsxs("nav",{children:[V.jsx(fu,{to:"/",style:{textDecoration:"none",color:"inherit",marginLeft:"20px"},children:"Home"}),V.jsx(fu,{to:"/projects",style:{textDecoration:"none",color:"inherit",marginLeft:"20px"},children:"Projetos"}),V.jsx(fu,{to:"/about",style:{textDecoration:"none",color:"inherit",marginLeft:"20px"},children:"Sobre mim"})]})}),Pg=Xt.footer`
@@ -189,25 +189,24 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   margin: 5rem auto;
   max-width: 900px;
 `,f1=Xt.div`
-  max-width: 850px;
+  max-width: 800px;
   z-index: 2;
   
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 400;
     font-family: 'EB Garamond', sans-serif;
   }
 
   p {
-    font-size: 1.125rem;
     text-align: justify;
     margin-bottom: 1rem;
   }
 `,o1=Xt.img`
   position: absolute;
   top: -40px;
-  left: -500px;
+  left: -400px;
   width: 400px;
   transform: rotate(-12deg);
   border: 1px solid #ddd;
@@ -222,7 +221,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
 `,s1=Xt.img`
   position: absolute;
   bottom: -40px;
-  right: -500px;
+  right: -400px;
   width: 400px;
   transform: rotate(10deg);
   border: 1px solid #ddd;
@@ -239,7 +238,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   justify-content: center;
   scroll-snap-align: start;
   h1{
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
     margin-top: 0;
