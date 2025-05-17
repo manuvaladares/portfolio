@@ -1,15 +1,17 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import Projects from '../../components/Projects/page.jsx';
 import {
-  Section,
+  SectionHello,
+  SectionAbout, AboutContainer, AboutPhoto, AboutText,
   ContentWrapper,
-  ScriptFont,
+  ScriptFont
 } from './styled';
 
 const Home = () => {
   return (
     <>
-      <Section>
+      <SectionHello>
         <ContentWrapper>
           <h2>Hello, I'm <ScriptFont>Manuella</ScriptFont>.</h2>
           <p>
@@ -27,19 +29,25 @@ const Home = () => {
             </span>
           </p>
         </ContentWrapper>
-      </Section>
+      </SectionHello>
 
-      <Section>
+      <SectionAbout>
         <ContentWrapper>
-          <h2>Sobre mim</h2>
-          <p>
-            Sou desenvolvedora de software, apaixonada por acessibilidade,
-            design e crochê. Atualmente estudo Engenharia de Software na UnB.
-          </p>
+          <AboutContainer>
+            <AboutPhoto>
+              <img src="/caminho/para/foto.jpg" alt="Foto de perfil" />
+            </AboutPhoto>
+            <AboutText>
+              <h2>My About</h2>
+              <p>
+                Sou desenvolvedora de software, apaixonada por acessibilidade,
+                design e crochê. Atualmente estudo Engenharia de Software na UnB.
+              </p>
+            </AboutText>
+          </AboutContainer>
         </ContentWrapper>
-      </Section>
-
-      {/* Adicione outras sections aqui, como Projetos, Contato, etc. */}
+      </SectionAbout>
+      <Projects />
     </>
   );
 };

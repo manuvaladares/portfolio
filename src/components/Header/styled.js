@@ -6,8 +6,9 @@ export const HeaderWrapper = styled.header`
   left: 0;
   right: 0;
 
-  height: 60px;
   color: #2C2C2C;
+  margin-top: 20px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* melhor que 'right' */
