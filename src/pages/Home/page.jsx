@@ -2,6 +2,7 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Projects from '../../components/Projects/page.jsx';
 import About from '../../components/About/page.jsx';
+import ContactSection from '../../components/Contact/page.jsx';
 import {
   SectionHello,
   ContentWrapper
@@ -31,6 +32,7 @@ const Home = () => {
       </SectionHello>
       <About />
       <Projects />
+      <ContactSection />
     </>
   );
 };

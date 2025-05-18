@@ -21,6 +21,9 @@ const Header = () => {
         <StyledLink onClick={() => scrollToSection("projects")}>
           Projects
         </StyledLink>
+        <StyledLink onClick={() => scrollToSection("contact")}>
+          Contact me
+        </StyledLink>
       </nav>
     </HeaderWrapper>
   );

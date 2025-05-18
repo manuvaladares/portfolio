@@ -28,7 +28,7 @@ const About = () => {
               href="https://www.meninas.cic.unb.br/" 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ color: "#e75480", textDecoration: "underline", margin: "0 4px" }}
+              style={{ color: "#574bdb", textDecoration: "underline", margin: "0 4px" }}
             >
               Meninas.Comp project
             </a>
@@ -40,7 +40,7 @@ const About = () => {
               href="https://www.linkedin.com/company/baitts/?originalSubdomain=br"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#e75480", textDecoration: "underline", margin: "0 4px" }}
+              style={{ color: "#574bdb", textDecoration: "underline", margin: "0 4px" }}
             >
               BAITTS
             </a>
@@ -55,7 +55,7 @@ const About = () => {
               href="https://ieeexplore.ieee.org/document/10893151"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#e75480", textDecoration: "underline", margin: "0 4px" }}
+              style={{ color: "#574bdb", textDecoration: "underline", margin: "0 4px" }}
             >
               first academic paper
             </a>
@@ -64,7 +64,7 @@ const About = () => {
               href="https://itrac.unb.br/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#e75480", textDecoration: "underline", margin: "0 4px" }}
+              style={{ color: "#574bdb", textDecoration: "underline", margin: "0 4px" }}
             >
               ITRAC (Information Technology, Research and Application Center)
             </a>

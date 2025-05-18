@@ -10,9 +10,10 @@ export const SectionHello = styled.section`
   scroll-snap-align: start;
   h1{
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 0;
+    font-style: italic;
   }
 
   p{
@@ -23,7 +24,7 @@ export const SectionHello = styled.section`
 
   }
   @media (max-width: 768px) {
-    h2{
+    h1{
       font-size: 3rem;
     }
     p{
@@ -31,7 +32,7 @@ export const SectionHello = styled.section`
     }
   }
   @media (max-width: 480px) {
-    h2{
+    h1{
       font-size: 2.5rem;
     }
     p{
