@@ -19,7 +19,7 @@ const About = () => {
       <PhotoRightup src={photo4} alt="Decorative 2" />
       <PhotoRightdown src={photo2} alt="Decorative 2" />
 
-      <AboutText>
+      <AboutText id="about">
           <h2>Code and Curiosity</h2>
           <p>I'm currently pursuing a B.Sc. in Software Engineering (2022-2027) at the University of Brasília (UnB) and working as a research student.  I have shaped my academic and professional journey around the intersection of technology, accessibility, and research. </p>
           <p>

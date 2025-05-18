@@ -10,7 +10,7 @@ import {
 const Home = () => {
   return (
     <>
-      <SectionHello>
+      <SectionHello id="home">
         <ContentWrapper>
           <h1>Hello, I'm Manuella.</h1>
           <p>

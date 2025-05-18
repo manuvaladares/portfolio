@@ -1,20 +1,26 @@
 import React from "react";
-import { HeaderWrapper } from "./styled";
-import { Link } from "react-router-dom";
+import { HeaderWrapper, StyledLink } from "./styled";
 
 const Header = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <HeaderWrapper>
       <nav>
-        <Link to="/" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
-          Home
-        </Link>
-        <Link to="/projects" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
+        <StyledLink onClick={() => scrollToSection("home")}>
+          Início
+        </StyledLink>
+        <StyledLink onClick={() => scrollToSection("projects")}>
           Projetos
-        </Link>
-        <Link to="/about" style={{ textDecoration: "none", color: "inherit", marginLeft: "20px" }}>
+        </StyledLink>
+        <StyledLink onClick={() => scrollToSection("about")}>
           Sobre mim
-        </Link>
+        </StyledLink>
       </nav>
     </HeaderWrapper>
   );

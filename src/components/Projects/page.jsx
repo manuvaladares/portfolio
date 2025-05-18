@@ -3,7 +3,7 @@ import { Projetos, ProjectsGrid, ProjectCard, SectionTitle, TagContainer, Tag } 
 
 const Projects = () => {
   return (
-    <Projetos>
+    <Projetos id="projects">
       <SectionTitle style={{ textAlign: "center", marginBottom: "1rem" }}>
         Projects
       </SectionTitle>
