@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
 export const Projetos = styled.section`
-  margin: 0 4rem 2.5rem 4rem;
+  height: 70vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+  flex-direction: column;
+
 
   @media (max-width: 1024px) {
     margin: 4rem 2rem;
@@ -32,10 +39,12 @@ export const Tag = styled.span`
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   padding: 0;
   margin: 20px;
+  font-weight: 400;
+
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -43,13 +52,13 @@ export const SectionTitle = styled.h3`
   }
 
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 1rem;
   }
 `;
 
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   max-width: 1000px;
   margin: 20px auto;

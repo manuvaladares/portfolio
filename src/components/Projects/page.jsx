@@ -57,6 +57,22 @@ const Projects = () => {
             View on GitHub
           </a>
         </ProjectCard>
+        <ProjectCard>
+          <h3>Minas de cultura</h3>
+          <p>Check cultural expenses of the state of Minas Gerais</p>
+          <TagContainer>
+            <Tag>Python</Tag>
+            <Tag>Web Scraping</Tag>
+            <Tag>Next</Tag>
+          </TagContainer>
+          <a
+            href="https://github.com/manuvaladares/2024-1-MinasDeCultura"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </ProjectCard>
       </ProjectsGrid>
     </Projetos>
   );

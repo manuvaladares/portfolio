@@ -13,13 +13,13 @@ const Header = () => {
     <HeaderWrapper>
       <nav>
         <StyledLink onClick={() => scrollToSection("home")}>
-          Início
-        </StyledLink>
-        <StyledLink onClick={() => scrollToSection("projects")}>
-          Projetos
+          Home
         </StyledLink>
         <StyledLink onClick={() => scrollToSection("about")}>
-          Sobre mim
+          About
+        </StyledLink>
+        <StyledLink onClick={() => scrollToSection("projects")}>
+          Projects
         </StyledLink>
       </nav>
     </HeaderWrapper>

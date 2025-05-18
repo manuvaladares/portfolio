@@ -13,7 +13,6 @@ export const SectionHello = styled.section`
     font-weight: 400;
     margin-bottom: 1rem;
     margin-top: 0;
-    font-family: 'EB Garamond', sans-serif;
   }
 
   p{
