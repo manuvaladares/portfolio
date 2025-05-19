@@ -12,6 +12,7 @@ export const SectionAbout = styled.section`
   margin: 5rem auto;
   max-width: 900px;
   padding: 1rem;
+  flex-direction: column;
 
   @media ${mobile} {
     flex-direction: column;

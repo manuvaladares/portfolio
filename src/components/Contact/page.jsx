@@ -46,7 +46,7 @@ export default function ContactSection() {
           </SocialLink>
 
           <SocialLink
-            href="http://lattes.cnpq.br/seu-codigo-lattes"
+            href="https://lattes.cnpq.br/9815810102046557"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Lattes"
