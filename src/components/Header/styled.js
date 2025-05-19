@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const mobile = '(max-width: 768px)';
+
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -11,6 +13,13 @@ export const HeaderWrapper = styled.header`
   justify-content: flex-end;
   z-index: 1000;
   padding: 0 40px;
+
+  @media ${mobile} {
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
 `;
 
 export const StyledLink = styled.span`
@@ -22,5 +31,10 @@ export const StyledLink = styled.span`
 
   &:hover {
     color: #e75480;
+  }
+
+  @media ${mobile} {
+    margin: 10px;
+    font-size: 0.95rem;
   }
 `;

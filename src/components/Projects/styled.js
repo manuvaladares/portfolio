@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Projetos = styled.section`
-  height: 70vh;
   min-height: 400px;
   display: flex;
   justify-content: center;
@@ -39,10 +38,8 @@ export const Tag = styled.span`
 
 export const SectionTitle = styled.h3`
   font-size: 2rem;
-  font-weight: 700;
-  padding: 0;
-  margin: 20px;
   font-weight: 400;
+  margin: 20px auto;
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -54,27 +51,24 @@ export const SectionTitle = styled.h3`
   }
 `;
 
+
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1200px; 
   margin: 20px auto;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr); 
-  }
+  width: 100%;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 15px;
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: 1fr; 
     gap: 10px;
   }
 `;
+
 
 export const ProjectCard = styled.div`
   background-color: white;
@@ -82,10 +76,12 @@ export const ProjectCard = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
 
   h3 {
