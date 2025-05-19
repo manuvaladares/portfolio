@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+const mobile = '(max-width: 768px)';
+
 export const Projetos = styled.section`
   min-height: 400px;
   display: flex;
@@ -39,16 +41,12 @@ export const Tag = styled.span`
 export const SectionTitle = styled.h3`
   font-size: 2rem;
   font-weight: 400;
-  margin: 20px auto;
+  text-align: center;
 
-  @media (max-width: 768px) {
-    font-size: 18px;
-    text-align: center; 
+  @media ${mobile} {
+    font-size: 1.5rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 1rem;
-  }
 `;
 
 

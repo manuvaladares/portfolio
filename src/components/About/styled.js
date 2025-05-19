@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 const mobile = '(max-width: 768px)';
+const tablet = '(max-width: 1024px)';
 
 export const SectionAbout = styled.section`
   position: relative;
@@ -30,6 +31,7 @@ export const AboutText = styled.div`
 
     @media ${mobile} {
       font-size: 1.5rem;
+
     }
   }
 
@@ -57,6 +59,10 @@ const sharedImageStyles = `
   }
 
   @media ${mobile} {
+    display: none;
+  }
+
+  @media ${tablet} {
     display: none;
   }
 `;
