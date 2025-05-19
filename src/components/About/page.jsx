@@ -11,16 +11,17 @@ import photo2 from '../../assets/foto2.png';
 import photo3 from '../../assets/foto3.jpg';
 import photo4 from '../../assets/foto4.jpg';
 import photo5 from '../../assets/foto5.jpg';
+import photo6 from '../../assets/foto6.jpg';
 
 const About = () => {
   return (
     <SectionAbout>
-      <PhotoLeftup src={photo1} alt="Decorative 1" />
-      <PhotoLeftdown src={photo5} alt="Decorative 1" />
-      <PhotoRightup src={photo4} alt="Decorative 2" />
-      <PhotoRightdown src={photo2} alt="Decorative 2" />
+      <PhotoLeftup src={photo1} alt="Manuella in a blue shirt and black pants standing in front of the IHC Symposium panel" />
+      <PhotoLeftdown src={photo5} alt="Manuella smiling at the camera in a purple shirt at Campus Party - Brasília 2024" />
+      <PhotoRightup src={photo4} alt="Manuella speaking into the microphone during a lecture at Campus Party" />
+      <PhotoRightdown src={photo2} alt="A notebook with an article open" />
 
-      <PhotoCarousel photos={[photo1, photo2, photo4, photo5]} />
+      <PhotoCarousel photos={[photo1, photo4, photo2, photo5, photo6]} />
       <AboutText id="about">
           <h2>Code and Curiosity</h2>
           <p>I'm currently pursuing a B.Sc. in Software Engineering (2022-2027) at the University of Brasília (UnB) and working as a research student.  I have shaped my academic and professional journey around the intersection of technology, accessibility, and research. </p>
