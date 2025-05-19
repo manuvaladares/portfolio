@@ -3,7 +3,7 @@ import {
   Section,
 
   SocialLinks,
-  SocialLink
+  SocialLink, FooterWrapper
 } from './styled';
 
 export default function ContactSection() {
@@ -57,6 +57,9 @@ export default function ContactSection() {
             </svg>
           </SocialLink>
         </SocialLinks>
+        <FooterWrapper>
+          <p>© 2025 Manuella Valadares</p>
+        </FooterWrapper>
     </Section>
   );
 }

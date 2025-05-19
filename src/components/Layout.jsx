@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Header from "./Header/page.jsx";
-import Footer from "./Footer/page.jsx";
 
 const Main = styled.main`
   margin-bottom: 50px;
@@ -11,7 +10,6 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <Main>{children}</Main>
-      <Footer />
     </>
   );
 };

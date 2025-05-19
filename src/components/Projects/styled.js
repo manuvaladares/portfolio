@@ -6,9 +6,8 @@ export const Projetos = styled.section`
   display: flex;
   justify-content: center;
   margin: 2rem auto;
-  max-width: 1000px;
+  max-width: 1200px; 
   flex-direction: column;
-
 
   @media (max-width: 1024px) {
     margin: 4rem 2rem;
@@ -45,10 +44,9 @@ export const SectionTitle = styled.h3`
   margin: 20px;
   font-weight: 400;
 
-
   @media (max-width: 768px) {
     font-size: 18px;
-    text-align: center; /* Centraliza o título em telas menores */
+    text-align: center; 
   }
 
   @media (max-width: 480px) {
@@ -58,18 +56,22 @@ export const SectionTitle = styled.h3`
 
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
-  max-width: 1000px;
+  max-width: 1200px; 
   margin: 20px auto;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 15px;
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+    grid-template-columns: 1fr; 
     gap: 10px;
   }
 `;

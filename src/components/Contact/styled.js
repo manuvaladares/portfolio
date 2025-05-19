@@ -66,3 +66,16 @@ export const SocialLink = styled.a`
   }
 `;
 
+export const FooterWrapper = styled.footer`
+  bottom: 0;  
+  margin: 2rem;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+`;
+
+
