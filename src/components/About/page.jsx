@@ -26,16 +26,16 @@ const About = () => {
           <h2>Code and Curiosity</h2>
           <p>I'm currently pursuing a B.Sc. in Software Engineering (2022-2027) at the University of Brasília (UnB) and working as a research student.  I have shaped my academic and professional journey around the intersection of technology, accessibility, and research. </p>
           <p>
-            From 2022 to 2024, I was a part of the 
+            From 2022 to 2024, I was part of the 
             <a 
               href="https://www.meninas.cic.unb.br/" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{ color: "#ff007f ", textDecoration: "underline", margin: "0 4px" }}
             >
-              Meninas.Comp project
+              Meninas.Comp
             </a>
-            , which empowers young women to explore careers in tech. During this time—one year as a scholarship student—I helped organize events that fostered community, visibility, and support among women in computing at UnB.
+             project, which empowers young women to explore careers in tech. During this time—one year as a scholarship student—I helped organize events that fostered community, visibility, and support among women in computing at UnB.
           </p>
           <p>
             In 2023, I joined 
@@ -69,9 +69,9 @@ const About = () => {
               rel="noopener noreferrer"
               style={{ color: "#ff007f ", textDecoration: "underline", margin: "0 4px" }}
             >
-              ITRAC (Information Technology, Research and Application Center)
+              ITRAC
             </a>
-            , where I now focus on digital accessibility and public digital services—exploring how to improve the development, usability of GOV public services.
+             (Information Technology, Research and Application Center), where I now focus on digital accessibility and public digital services—exploring how to improve the development, usability of GOV public services.
           </p>
           <p>As a developer, I work mostly with React and JavaScript on the front end, and I have experience with Python, especially in data analysis, automation, and ML prototyping. I’m used to agile workflows, enjoy turning user requirements into usable software, and often dive deep into database modeling.</p>
           <p>I am driven by curiosity and by projects that positively impact people's lives. This space represents my learning journey. </p>

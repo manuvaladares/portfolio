@@ -21,7 +21,7 @@ export const CarouselTrack = styled.div`
 
 export const Photo = styled.img`
   flex: 0 0 auto;
-  width: 90vw; /* quase toda a largura da viewport menos as laterais */
+  width: 90vw; 
   max-width: 500px;
   height: 300px;
   object-fit: cover;

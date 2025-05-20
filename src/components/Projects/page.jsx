@@ -40,7 +40,23 @@ const Projects = () => {
             View on GitHub
           </a>
         </ProjectCard>
-
+        <ProjectCard>
+          <h3>Família do Sítio website</h3>
+          <p>website of the company Família do Sítio</p>
+          <TagContainer>
+            <Tag>React</Tag>
+            <Tag>Node</Tag>
+            <Tag>MongoDB</Tag>
+            <Tag>styled-components</Tag>
+          </TagContainer>
+          <a
+            href="https://cafedositio.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View website (in production)
+          </a>
+        </ProjectCard>
         <ProjectCard>
           <h3>Minas de cultura</h3>
           <p>Check cultural expenses of the state of Minas Gerais</p>
@@ -58,18 +74,31 @@ const Projects = () => {
           </a>
         </ProjectCard>
         <ProjectCard>
-          <h3>Minas de cultura</h3>
-          <p>Check cultural expenses of the state of Minas Gerais</p>
+          <h3>99 Graphs</h3>
+          <p>Calculate the shortest path between important points in Brasilia using Dijkstra's algorithm on a real graph</p>
           <TagContainer>
             <Tag>Python</Tag>
-            <Tag>Web Scraping</Tag>
-            <Tag>Next</Tag>
+            <Tag>Streamlit</Tag>
+            <Tag>Geopy</Tag>
           </TagContainer>
           <a
-            href="https://github.com/manuvaladares/2024-1-MinasDeCultura"
+            href="https://github.com/manuvaladares/99Grafos"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </ProjectCard>
+        <ProjectCard>
+          <h3>Maze</h3>
+          <p>Visualize and compare the performance of BFS (Breadth-First Search) and DFS (Depth-First Search) algorithms in finding a path in a graph</p>
+          <TagContainer>
+            <Tag>Python</Tag>
+            <Tag>Streamlit</Tag>
+          </TagContainer>
+          <a
+            href="https://github.com/manuvaladares/Maze"
+            target="_blank"
+            rel="noopener noreferrer">
             View on GitHub
           </a>
         </ProjectCard>
