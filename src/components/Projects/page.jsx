@@ -16,7 +16,7 @@ const Projects = () => {
             <Tag>styled-components</Tag>
           </TagContainer>
           <a
-            href="https://github.com/manuvaladares/personal-portfolio"
+            href="https://github.com/manuvaladares/portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
