@@ -70,11 +70,12 @@ export const ProjectsGrid = styled.div`
 
 export const ProjectCard = styled.div`
   background-color: white;
-  padding: 20px;
+  padding: 0;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 
   &:hover,
   &:focus-within {
@@ -111,5 +112,32 @@ export const ProjectCard = styled.div`
     @media (max-width: 480px) {
       font-size: 0.8rem;
     }
+  }
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+
+  @media (max-width: 768px) {
+    height: 160px;
+  }
+
+  @media (max-width: 480px) {
+    height: 140px;
+  }
+`;
+
+export const ProjectContent = styled.div`
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px;
   }
 `;
