@@ -105,7 +105,7 @@ const Projects = () => {
               <Tag>HTML</Tag>
             </TagContainer>
             <a
-              href="https://github.com/manuvaladares/99Grafos"
+              href="https://github.com/manuvaladares/bateria.js"
               target="_blank"
               rel="noopener noreferrer">
               View on GitHub
