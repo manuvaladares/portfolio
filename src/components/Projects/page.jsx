@@ -1,11 +1,11 @@
 import React from "react";
 import { Projetos, ProjectsGrid, ProjectCard, SectionTitle, TagContainer, Tag, ProjectImage, ProjectContent } from "./styled";
-import foto1 from "../../assets/foto1.jpg";
-import foto2 from "../../assets/foto2.png";
-import foto3 from "../../assets/foto3.jpg";
-import foto4 from "../../assets/foto4.jpg";
-import foto5 from "../../assets/foto5.jpg";
-import foto6 from "../../assets/foto6.jpg";
+import portfolio from "../../assets/projetos/portfolio.png";
+import stardew from "../../assets/projetos/stardew.jpeg";
+import cafe from "../../assets/projetos/cafe.png";
+import laboratorio from "../../assets/projetos/laboratorio.png";
+import drums from "../../assets/projetos/drums.png";
+import maze from "../../assets/projetos/maze.png";
 
 const Projects = () => {
   return (
@@ -15,7 +15,7 @@ const Projects = () => {
       </SectionTitle>
       <ProjectsGrid>
         <ProjectCard>
-          <ProjectImage src={foto1} alt="Personal Portfolio" />
+          <ProjectImage src={portfolio} alt="Personal Portfolio" />
           <ProjectContent>
             <h3>Personal Portfolio</h3>
             <p>Built with React and styled-components</p>
@@ -34,7 +34,7 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <ProjectImage src={foto2} alt="Stardew Valley terminal game" />
+          <ProjectImage src={stardew} alt="Stardew Valley terminal game" />
           <ProjectContent>
             <h3>Stardew Valley terminal game with SQL</h3>
             <p>Terminal game with SQL</p>
@@ -54,10 +54,10 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <ProjectImage src={foto3} alt="Família do Sítio website" />
+          <ProjectImage src={cafe} alt="Família do Sítio website" />
           <ProjectContent>
             <h3>Família do Sítio website</h3>
-            <p>website of the company Família do Sítio</p>
+            <p>Website of the company Família do Sítio</p>
             <TagContainer>
               <Tag>React</Tag>
               <Tag>Node</Tag>
@@ -75,17 +75,17 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <ProjectImage src={foto4} alt="Minas de cultura" />
+          <ProjectImage src={laboratorio} alt="Genetic Laboratory" />
           <ProjectContent>
-            <h3>Minas de cultura</h3>
-            <p>Check cultural expenses of the state of Minas Gerais</p>
+            <h3>Genetic Laboratory</h3>
+            <p>Uses the Needleman-Wunsch algorithm to perform alignment between a DNA sequence and a mutation proposed by the user in a creature.</p>
             <TagContainer>
-              <Tag>Python</Tag>
-              <Tag>Web Scraping</Tag>
-              <Tag>Next</Tag>
+              <Tag>JavaScript</Tag>
+              <Tag>CSS</Tag>
+              <Tag>HTML</Tag>
             </TagContainer>
             <a
-              href="https://github.com/manuvaladares/2024-1-MinasDeCultura"
+              href="https://github.com/manuvaladares/lab"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,14 +95,14 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <ProjectImage src={foto5} alt="99 Graphs" />
+          <ProjectImage src={drums} alt="drum game" />
           <ProjectContent>
-            <h3>99 Graphs</h3>
-            <p>Calculate the shortest path between important points in Brasilia using Dijkstra's algorithm on a real graph</p>
+            <h3>Online Drum Kit</h3>
+            <p>A simple virtual drum kit built with HTML, CSS, and JavaScript that allows users to play drum sounds by clicking buttons or using keyboard interactions.</p>
             <TagContainer>
-              <Tag>Python</Tag>
-              <Tag>Streamlit</Tag>
-              <Tag>Geopy</Tag>
+              <Tag>JavaScript</Tag>
+              <Tag>CSS</Tag>
+              <Tag>HTML</Tag>
             </TagContainer>
             <a
               href="https://github.com/manuvaladares/99Grafos"
@@ -114,7 +114,7 @@ const Projects = () => {
         </ProjectCard>
 
         <ProjectCard>
-          <ProjectImage src={foto6} alt="Maze" />
+          <ProjectImage src={maze} alt="Maze" />
           <ProjectContent>
             <h3>Maze</h3>
             <p>Visualize and compare the performance of BFS (Breadth-First Search) and DFS (Depth-First Search) algorithms in finding a path in a graph</p>

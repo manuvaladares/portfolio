@@ -6,12 +6,12 @@ import {
   PhotoLeftup, PhotoRightup,
   PhotoLeftdown, PhotoRightdown
 } from './styled';
-import photo1 from '../../assets/foto1.jpg';
-import photo2 from '../../assets/foto2.png';
-import photo3 from '../../assets/foto3.jpg';
-import photo4 from '../../assets/foto4.jpg';
-import photo5 from '../../assets/foto5.jpg';
-import photo6 from '../../assets/foto6.jpg';
+import photo1 from '../../assets/about/foto1.jpg';
+import photo2 from '../../assets/about/foto2.png';
+import photo3 from '../../assets/about/foto3.jpg';
+import photo4 from '../../assets/about/foto4.jpg';
+import photo5 from '../../assets/about/foto5.jpg';
+import photo6 from '../../assets/about/foto6.jpg';
 
 const About = () => {
   return (
