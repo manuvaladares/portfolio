@@ -8,26 +8,34 @@ const Navigation = () => {
       <ul>
         <li>
           <NavLink
-            to="/work"
+            to="/trabalhos"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
-            Work
+            Trabalhos
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/about"
+            to="/sobre-mim"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
-            About
+            Sobre Mim
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/contato"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
-            Contact
+            Contato
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/tecnologias"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Tecnologias
           </NavLink>
         </li>
       </ul>

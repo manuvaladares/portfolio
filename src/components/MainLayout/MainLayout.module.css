@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.right {
+  flex: 2;
+  padding: 2rem;
+  background: var(--color-surface);
+}

@@ -1,13 +1,21 @@
 import React from 'react';
-import styles from './AboutPage.module.css';
+
+import MainLayout from '../../components/MainLayout/MainLayout';
+import Navigation from '../../components/navigation/navigation';
+
 
 const AboutPage = () => {
   return (
-    <div className={styles.aboutPageContainer}>
-        <h1>About Me</h1>
-        <p>Welcome to the about page!</p>
-    </div>
-  ); 
+    <MainLayout
+      leftContent={
+        <>
+          <h1>About Me</h1>
+          <p>Welcome to the about page!</p>
+        </>
+      }
+      rightContent={<Navigation />}
+    />
+  );
 };
 
 export default AboutPage;
