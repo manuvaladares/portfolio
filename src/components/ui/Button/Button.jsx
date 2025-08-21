@@ -1,0 +1,9 @@
+import styles from './Button.module.css';
+
+const Button = ({ children, onClick, type = 'button' }) => (
+  <button className={styles.button} onClick={onClick} type={type}>
+    {children}
+  </button>
+);
+
+export default Button;

@@ -1,44 +1,27 @@
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './navigation.module.css';
+import Button from '../ui/Button/Button';
 
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
-      <ul>
-        <li>
-          <NavLink
-            to="/work"
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
-          >
-            Trabalhos
+          <NavLink to="/work" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <Button>Trabalhos</Button>
           </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
-          >
-            Sobre Mim
+
+          <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <Button>Sobre Mim</Button>
           </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
-          >
-            Contato
+
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <Button>Contato</Button>
           </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/skills"
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
-          >
-            Tecnologias
+
+          <NavLink to="/skills" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <Button>Tecnologias</Button>
           </NavLink>
-        </li>
-      </ul>
     </nav>
   );
 };
