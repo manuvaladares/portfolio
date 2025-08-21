@@ -16,7 +16,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
-            to="/sobre-mim"
+            to="/"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
             Sobre Mim
