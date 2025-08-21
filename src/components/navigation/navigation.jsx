@@ -8,7 +8,7 @@ const Navigation = () => {
       <ul>
         <li>
           <NavLink
-            to="/trabalhos"
+            to="/work"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
             Trabalhos
@@ -24,7 +24,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
-            to="/contato"
+            to="/contact"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
             Contato
@@ -32,7 +32,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
-            to="/tecnologias"
+            to="/skills"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
             Tecnologias
