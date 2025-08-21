@@ -1,0 +1,42 @@
+/*
+ * Estilos para o contêiner principal da Página Sobre.
+ * O objetivo é centralizar o conteúdo e garantir um bom espaçamento.
+ */
+.aboutPageContainer {
+  /* 1. Define uma largura máxima para o conteúdo não ficar esticado em telas grandes */
+  max-width: 1024px;
+
+  /* 2. Centraliza o contêiner na página */
+  margin: 0 auto;
+
+  /* 3. Adiciona "respiros" nas laterais para telas menores e na vertical */
+  /* 4rem no topo/base (64px) e 2rem nas laterais (32px) */
+  padding: 4rem 2rem;
+
+  /* 4. Garante que o padding não aumente a largura total do container */
+  box-sizing: border-box;
+
+  /* 5. Usa Flexbox para organizar as seções verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os filhos (seções) no container */
+
+  /* 6. Adiciona um espaçamento generoso e consistente ENTRE cada seção */
+  /* Este é um dos segredos do design limpo! */
+  gap: 6rem; /* 96px de espaço entre a HeroSection, ServicesSection, etc. */
+}
+
+/*
+ * Estilos para o wrapper do menu, se você quiser dar um tratamento especial a ele.
+ * Neste caso, garantimos que ele ocupe toda a largura do contêiner.
+ */
+
+@media (max-width: 768px) {
+  .aboutPageContainer {
+    /* Diminui o espaçamento vertical e horizontal em telas menores */
+    padding: 3rem 1.5rem;
+
+    /* Diminui o espaçamento entre as seções */
+    gap: 4rem;
+  }
+}

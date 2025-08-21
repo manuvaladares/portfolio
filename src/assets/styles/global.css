@@ -1,0 +1,83 @@
+/* --- 1. IMPORTAÇÃO DE FONTES --- */
+/* Exemplo usando a fonte "Inter", excelente para interfaces e textos longos */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* --- 2. VARIÁVEIS CSS (DESIGN TOKENS) --- */
+/* Defina suas cores, fontes e espaçamentos aqui para fácil manutenção. */
+:root {
+  /* Paleta de Cores - Modo Claro (Padrão) */
+  --color-background: #FFFFFF;       /* Fundo principal (branco puro) */
+  --color-surface: #F8F9FA;         /* Fundo sutil para cards ou seções */
+  --color-text-primary: #111827;     /* Texto principal (preto suave) */
+  --color-text-secondary: #6B7280;   /* Texto secundário (cinza) */
+  --color-accent: #007AFF;           /* Cor de destaque para links e botões */
+  --color-border: #E5E7EB;           /* Cor para bordas sutis */
+
+  /* Tipografia */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Tema Escuro Automático */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #111827;       /* Fundo principal (preto suave) */
+    --color-surface: #1F2937;         /* Fundo sutil para cards ou seções */
+    --color-text-primary: #F9FAFB;     /* Texto principal (branco suave) */
+    --color-text-secondary: #9CA3AF;   /* Texto secundário (cinza claro) */
+    --color-accent: #38BDF8;           /* Cor de destaque (azul claro) */
+    --color-border: #374151;           /* Cor para bordas sutis */
+  }
+}
+
+/* --- 3. ESTILOS GLOBAIS E RESETS --- */
+html {
+  /* Melhora a rolagem da página com links de âncora (#) */
+  scroll-behavior: smooth;
+  /* Melhora o cálculo de tamanho dos elementos */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+
+  /* Melhora a renderização das fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 4. ESTILOS PADRÃO PARA TIPOGRAFIA --- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+  max-width: 65ch; /* Limita a largura do parágrafo para melhor legibilidade */
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
