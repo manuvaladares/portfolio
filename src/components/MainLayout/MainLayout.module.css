@@ -5,11 +5,11 @@
 
 .left {
   flex: 1;
-  padding: 2rem;
+  padding: 3rem 8rem;
 }
 
 .right {
-  flex: 2;
-  padding: 2rem;
+  flex: 4;
+  padding: 3rem 8rem;
   background: var(--color-surface);
 }
