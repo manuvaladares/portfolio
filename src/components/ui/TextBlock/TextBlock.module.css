@@ -1,0 +1,16 @@
+.textBlock {
+  margin-bottom: 2rem;
+}
+
+.title {
+  color: var(--color-cinza);
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 0 0.5rem 0;
+}
+
+.content {
+  color: var(--color-text-primary);
+  font-size: 1.4rem;
+  margin: 0;
+}

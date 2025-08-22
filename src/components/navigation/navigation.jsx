@@ -26,12 +26,12 @@ const Navigation = () => {
               <Button className={isActive ? buttonStyles.active : ''}>Contato</Button>
             )}
           </NavLink>
-
+{/* 
           <NavLink to="/skills">
             {({ isActive }) => (
               <Button className={isActive ? buttonStyles.active : ''}>Tecnologias</Button>
             )}
-          </NavLink>
+          </NavLink> */}
     </nav>
   );
 };

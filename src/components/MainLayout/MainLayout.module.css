@@ -4,12 +4,19 @@
   position: relative;
 }
 
+
 .left {
-  flex: 1;
-  padding: 3rem 8rem;
+  flex-basis: 33.3333%;
+  max-width: 33.3333%;
+  min-width: 33.3333%;
+  padding: 5rem 0 5rem 10rem;
+  box-sizing: border-box;
 }
 
 .right {
-  flex: 4;
-  padding: 3rem 8rem;
+  flex-basis: 66.6667%;
+  max-width: 66.6667%;
+  min-width: 66.6667%;
+  padding: 5rem 10rem 5rem 0;
+  box-sizing: border-box;
 }
