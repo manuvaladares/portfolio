@@ -10,6 +10,7 @@
   --color-amarelinho: #EFF0A3; 
   --color-verde: #CFDECA;
   --color-azul: #d8dfe9;
+  --color-cinza: rgb(177, 177, 177);
 
   --font-primary: "Poppins", sans-serif;
 }
@@ -24,6 +25,7 @@
     --color-amarelinho: #E6EFA3;
     --color-verde: #3A4D39;
     --color-azul: #2C3440;
+    --color-cinza: rgb(177, 177, 177);
   }
 }
 

@@ -1,16 +1,30 @@
 .button {
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 4px;
-  background: var(--color-amarelinho);
+  border: 1px solid var(--color-cinza);
+  border-radius: 24px;
+  box-sizing: border-box;
   color: var(--color-text-primary);
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  display: inline-block;
+  height: 35px;
+  line-height: 24px;
+  list-style-type: none;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-primary);
+  user-select: none;
+  vertical-align: middle;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-tap-highlight-color: var(--color-text-primary);
 }
 
 .button:hover {
-  background: var(--color-verde);
+  border-color: var(--color-text-primary);
+}
+
+
+.button.active {
+  background: var(--color-text-primary);
+  color: #fff;
+  border-color: var(--color-text-primary);
 }

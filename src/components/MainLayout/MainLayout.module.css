@@ -1,6 +1,7 @@
 .container {
   display: flex;
   min-height: 100vh;
+  position: relative;
 }
 
 .left {
@@ -11,5 +12,4 @@
 .right {
   flex: 4;
   padding: 3rem 8rem;
-  background: var(--color-surface);
 }

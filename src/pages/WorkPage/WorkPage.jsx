@@ -1,6 +1,5 @@
 import React from "react";
 import MainLayout from '../../components/MainLayout/MainLayout';
-import Navigation from '../../components/navigation/navigation';
 
 const WorkPage = () => {
     return (
@@ -11,7 +10,6 @@ const WorkPage = () => {
             <p>Welcome to the works page!</p>
           </>
         }
-        rightContent={<Navigation />}
       />
     );
 };
